@@ -1,7 +1,10 @@
 import useSWR from 'swr'
 
 export default function Csr() {
+    
+    let date = new Date();
+
     return (
-        <div>{Date.now()}</div>
+        <div>{date.toLocaleString()}</div>
     )
 }
