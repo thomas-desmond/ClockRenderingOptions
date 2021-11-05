@@ -1,18 +1,20 @@
 import { GetServerSideProps } from 'next'
+import styles from '../styles/Home.module.css'
 
 export const getServerSideProps: GetServerSideProps = async () => {
     
-    const date = Date.now();
+    const date = new Date().toLocaleDateString();
+    const time = new Date().toLocaleTimeString();
 
     return {
-        props: { date }
+        props: { date, time }
     };
 }
 
-function Ssr({ date }: { date: Date }) {
+function Ssr({ date, time }: { date: string, time: string }) {
     return (
-        <div>
-            {date}
+        <div className={styles.clock}>
+            {date} {time}
         </div>
     )
 }

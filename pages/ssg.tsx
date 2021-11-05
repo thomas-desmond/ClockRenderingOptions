@@ -1,18 +1,20 @@
 import { GetStaticProps } from 'next';
+import styles from '../styles/Home.module.css'
 
 export const getStaticProps: GetStaticProps = async () => {
 
-    const date = Date.now();
+    const date = new Date().toLocaleDateString();
+    const time = new Date().toLocaleTimeString();
 
     return {
-        props: { date }
+        props: { date, time }
     };
 }
 
-function Ssg({ date }: { date: Date }) {
+function Ssg({ date, time }: { date: string, time: string }) {
     return (
-        <div>
-            {date}
+        <div className={styles.clock}>
+            {date} {time}
         </div>
     )
 }

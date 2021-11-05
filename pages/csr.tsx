@@ -1,10 +1,14 @@
 import useSWR from 'swr'
+import styles from '../styles/Home.module.css'
 
 export default function Csr() {
-    
-    let date = new Date();
+
+    const date = new Date().toLocaleDateString();
+    const time = new Date().toLocaleTimeString();
 
     return (
-        <div>{date.toLocaleString()}</div>
+        <div className={styles.clock}>
+            {date} {time}
+        </div>
     )
 }
