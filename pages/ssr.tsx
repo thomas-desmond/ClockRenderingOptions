@@ -14,6 +14,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
 function Ssr({ date, time }: { date: string, time: string }) {
     return (
         <div className={styles.clock}>
+            <div>SSR</div>
             {date} {time}
         </div>
     )

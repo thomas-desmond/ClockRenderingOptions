@@ -8,6 +8,7 @@ export default function Csr() {
 
     return (
         <div className={styles.clock}>
+            <div>CSR</div>
             {date} {time}
         </div>
     )

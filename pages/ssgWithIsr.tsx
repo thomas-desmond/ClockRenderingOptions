@@ -15,6 +15,7 @@ export const getStaticProps: GetStaticProps = async () => {
 function ssgWithIsr({ date, time }: { date: string, time: string }) {
     return (
         <div className={styles.clock}>
+            <div>SSG w/ ISR</div>
             {date} {time}
         </div>
     )

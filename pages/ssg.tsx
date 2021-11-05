@@ -14,6 +14,7 @@ export const getStaticProps: GetStaticProps = async () => {
 function Ssg({ date, time }: { date: string, time: string }) {
     return (
         <div className={styles.clock}>
+            <div>SSG</div>
             {date} {time}
         </div>
     )
