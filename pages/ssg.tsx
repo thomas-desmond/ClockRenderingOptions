@@ -11,7 +11,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
 function Ssg({ data }: { data: IssData }) {
     return (
-        <main>
+        <main className={styles.center}>
             <h1>Static Site Generation (SSG)</h1>
             <h3>{data?.iss_position?.latitude}</h3>
             <h3>{data?.iss_position?.longitude}</h3>

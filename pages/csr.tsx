@@ -16,7 +16,7 @@ export default function Csr() {
     }, [])
 
     return (
-        <main>
+        <main className={styles.center}>
             <h1>Client Side Rendering (CSR)</h1>
             <h3>{data?.iss_position?.latitude}</h3>
             <h3>{data?.iss_position?.longitude}</h3>

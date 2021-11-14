@@ -11,7 +11,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
 
 function Ssr({ data}: { data: IssData }) {
     return (
-        <main>
+        <main className={styles.center}>
             <h1>Server Side Rendering (SSR)</h1>
             <h3>{data?.iss_position?.latitude}</h3>
             <h3>{data?.iss_position?.longitude}</h3>
