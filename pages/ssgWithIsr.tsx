@@ -8,7 +8,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
     return {
         props: { date, time },
-        revalidate: 10
+        revalidate: 15
     };
 }
 
