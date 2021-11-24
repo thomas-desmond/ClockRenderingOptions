@@ -3,7 +3,6 @@ import { IssData } from '../interfaces/iss';
 import styles from '../styles/Home.module.css'
 
 export const getStaticProps: GetStaticProps = async () => {
-
     const response = await fetch('http://api.open-notify.org/iss-now.json')
     const data: IssData = await response.json()
   

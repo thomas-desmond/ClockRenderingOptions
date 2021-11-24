@@ -20,8 +20,8 @@ export default function Csr() {
             <h1>Client Side Rendering (CSR)</h1>
             <h3>{data?.iss_position?.latitude}</h3>
             <h3>{data?.iss_position?.longitude}</h3>
-            <h3>{new Date(data.timestamp *1000).toLocaleDateString()}</h3>
-            <h3>{new Date(data.timestamp *1000).toLocaleTimeString()}</h3>
+            <h3>{new Date(data.timestamp * 1000).toLocaleDateString()}</h3>
+            <h3>{new Date(data.timestamp * 1000).toLocaleTimeString()}</h3>
         </main>
     )
 }
