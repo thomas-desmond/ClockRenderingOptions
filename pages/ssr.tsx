@@ -1,7 +1,7 @@
 import { GetServerSideProps } from 'next'
 import { IssData } from '../interfaces/iss';
 import styles from '../styles/Home.module.css'
-import { ComposableMap, Geographies, Geography, Marker } from "react-simple-maps";
+import { ComposableMap, Geographies, Geography, Marker } from 'react-simple-maps';
 const geoUrl =
     "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
 
